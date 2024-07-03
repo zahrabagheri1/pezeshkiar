@@ -1,6 +1,8 @@
 
-export default function App() {
+const App: React.FC = (): JSX.Element => {
   return (
-    <div>App</div>
+    <div className="">سامانه نوبت دهی پزشکیار </div>
   )
 }
+
+export default App
