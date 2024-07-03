@@ -1,22 +1,27 @@
-import { GlobalStyles, ThemeProvider } from "@mui/material"
+import { CacheProvider } from "@emotion/react"
+import { CssBaseline, GlobalStyles, ThemeProvider } from "@mui/material"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { cacheRtl } from "./styles/cacheRtl"
 import { theme } from "./styles/matrial"
 import { GlobalStyled } from "./styles/global"
-import { CacheProvider } from "@emotion/react"
-import { cacheRtl } from "./styles/cacheRtl"
-import { BrowserRouter } from "react-router-dom"
+import Layout from "./components/layout"
 
 
 const App: React.FC = (): JSX.Element => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles styles={GlobalStyled}>
-        <CacheProvider value={cacheRtl}>
+    <CacheProvider value={cacheRtl}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles styles={GlobalStyled} />
         <BrowserRouter>
-          
+          <Routes>
+            <Route path="/" element={<Layout />}>
+
+            </Route>
+          </Routes>
         </BrowserRouter>
-        </CacheProvider>
-      </GlobalStyles>
-    </ThemeProvider>
+        <CssBaseline />
+      </ThemeProvider>
+    </CacheProvider>
   )
 }
 
