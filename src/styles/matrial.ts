@@ -10,17 +10,20 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#02B3C4",
-      "50": "#ecfeff",
-      "100": "#cffafe",
-      "200": "#a5f3fc",
-      "300": "#67e8f9",
-      "400": "#22d3ee",
-      "500": "#06b6d4",
-      "600": "#0891b2",
-      "700": "#0e7490",
-      "800": "#155e75",
-      "900": "#164e63",
+      main: "#6f3afa",
+      
+      "50": " #3a8ef6",
+      "100":"#ECF2FC",
+      "200":"",
+      "300":"",
+      "400":"",
+      // background-color: linear-gradient(180deg, #6f3afa 0%, #3a8ef6 100%);
+      contrastText: "#fff",
+    },
+    secondary: {
+      main: "#6f3afa",
+      "50": " #3a8ef6",
+      // background-color: linear-gradient(180deg, #6f3afa 0%, #3a8ef6 100%);
       contrastText: "#fff",
     },
   },

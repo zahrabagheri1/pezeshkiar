@@ -6,15 +6,13 @@ import Footer from "./Footer/Footer"
 
 const Layout: React.FC = (): JSX.Element => {
     return (
-        <>
+        <Container maxWidth={'xl'}>
             <Header />
 
-            <Container maxWidth={'xl'}>
-                <Outlet />
-            </Container>
+            <Outlet />
 
             <Footer />
-        </>
+        </Container>
     )
 }
 
