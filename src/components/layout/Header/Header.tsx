@@ -1,4 +1,4 @@
-import { Button, Grid, Stack, Typography } from '@mui/material'
+import { Button, Stack, Typography } from '@mui/material'
 import React from 'react'
 import logo from '../../../../public/img/favicon.svg'
 
